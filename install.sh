@@ -33,9 +33,9 @@ MN_EXTERNAL_IP=`curl -s -4 https://api.ipify.org/`
 
 sudo useradd -U -m itncoin -s /bin/bash
 echo "itncoin:${ITN_DAEMON_USER_PASS}" | sudo chpasswd
-sudo wget https://github.com/itnltd/itncoin/releases/download/v1.5.4/itncoin-1.5.4-cli-linux.tar.gz --directory-prefix /home/itncoin/
-sudo tar -xzvf /home/itncoin/itncoin-1.5.4-cli-linux.tar.gz -C /home/itncoin/
-sudo rm /home/itncoin/itncoin-1.5.4-cli-linux.tar.gz
+sudo wget https://github.com/itnltd/itncoin/releases/download/v1.5.5/itncoin-1.5.5-cli-linux.tar.gz --directory-prefix /home/itncoin/
+sudo tar -xzvf /home/itncoin/itncoin-1.5.5-cli-linux.tar.gz -C /home/itncoin/
+sudo rm /home/itncoin/itncoin-1.5.5-cli-linux.tar.gz
 sudo mkdir /home/itncoin/.itncoin/
 sudo chown -R itncoin:itncoin /home/itncoin/itncoin*
 sudo chmod 755 /home/itncoin/itncoin*
